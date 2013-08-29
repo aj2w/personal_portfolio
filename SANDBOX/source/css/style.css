@@ -1,0 +1,161 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+/*First display window*/
+#home {
+	background: url(../images/abstract_newyork.jpg) 50% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+/*Second display window*/
+#about {
+	background: url(../images/about.jpg) 50% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+/*Third display window*/
+#portfolio {
+  background: url(../images/second.jpg) 50% 0 no-repeat fixed;
+  height: 3000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+}
+
+/* Name */
+.main-title {
+  height: 100px;
+  width: 700px;
+  float: left;
+  margin-left: 600px;
+  margin-top: 400px;
+  text-align: center;
+  font-family: 'Fjord One', serif;
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+/*About title (fixed on right hand side)*/
+.about-fixed {
+  color:white;
+  font-family: 'Fjord One', serif;
+  font-size: 45px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/*Portfolio title (fixed on right hand side)*/
+.portfolio-fixed {
+  color:white;
+  font-family: 'Fjord One', serif;
+  font-size: 45px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-top: 35px;
+  margin-right: -25px;
+}
+
+/*About section's text box*/
+.about-main {
+  height: 600px;
+  width: 900px;
+  position: absolute;
+  left: 250px;
+  top: 90px;
+  background-color:rgba(237,24,24,0.5);
+  padding: 45px;
+  color: white;
+  /*text-shadow: 2px 2px #000000;*/
+}
+
+.greeting {
+  font-size: 45px;
+  font-family: 'Lato', sans-serif;
+}
+
+.sub-greeting {
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-detail {
+  display: inline-block;
+  vertical-align: top;
+  width: 275px;
+
+    font-size: 19px;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-detail-header {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-main-text {
+ font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Portfolio section*/
+.portfolio-main {
+  height: 600px;
+  width: 900px;
+  position: absolute;
+  left: 250px;
+  top: 90px;
+  text-align: center;
+  /*background: pink;*/
+}
+
+.latest-work {
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.screenshots {
+  width: 400px;
+  padding: 20px;
+}
+
+/*hr {
+     color: #f00;
+     background: #f00;
+     width: 45%;
+     height: 2px;
+}*/
+
+
+
+
