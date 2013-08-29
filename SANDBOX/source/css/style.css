@@ -62,35 +62,39 @@ body{
 }
 
 /*Navbar*/
-.navbar-link {
+.navbar {
+  z-index: 1000;
   position: fixed;
   text-align: center;
   margin-top: 0;
   height: 30px;
-  width: 100px;
-  /*background: white;*/
-  background-color:rgba(255,230,0,0.5);
   color: #5c5050;
   line-height: 2.3;
   font-weight: 550;
-  /*border: 1px solid black;*/
+}
+
+.navbar-link {
+  position: fixed;
+  width: 100px;
+  background-color:rgba(255,230,0,0.7);
 }
 
 .about-link {
-  margin-left: 45px;
+  margin-left: 35px;
 }
 
 .portfolio-link {
-  margin-left: 145px;
+  margin-left: 135px;
 }
 
 .contact-link {
-  margin-left: 245px;
+  margin-left: 235px;
 }
 
 .blog-link {
-  margin-left: 345px;
+  margin-left: 335px;
 }
+
 
 /*Fixed header title (rotated 90 degrees)*/
 .fixed-title{

@@ -2,6 +2,7 @@
 //     console.log($(document).scrollTop());
 // })
 
+// The below sets the title in the upper right
 var setScrollAbout = function() {
   if($(document).scrollTop() > 1000) {
     $('.about-fixed').css({'position':'fixed', 'top':'65px'});
@@ -26,6 +27,15 @@ var setScrollContact = function() {
   }
 };
 
+var setAlternateNavbar = function() {
+  if($(document).scrollTop() > 1000) {
+    $('.navbar').css({'position':'absolute', 'top':'0'});
+  } else {
+    // some sort of else statement
+  }
+};
+
+// Sets the window to be ready, calls the functions
 $(document).ready(function(){
   // Cache the Window object
   $window = $(window);
@@ -41,10 +51,29 @@ $(document).ready(function(){
       $bgobj.css({ backgroundPosition: coords });
   }); // window scroll Ends
 
-});
+   });
   $window.scroll(setScrollAbout);
   $window.scroll(setScrollPortfolio);
   $window.scroll(setScrollContact);
+  $window.scroll(setAlternateNavbar);
+
+  $(".about-link").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#about").offset().top
+    }, 1000);
+  });
+
+  $(".portfolio-link").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#portfolio").offset().top
+    }, 1500);
+  });
+
+  $(".contact-link").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 2000);
+  });
 });
 
 /*
