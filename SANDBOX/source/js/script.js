@@ -18,6 +18,14 @@ var setScrollPortfolio = function() {
   }
 };
 
+var setScrollContact = function() {
+  if($(document).scrollTop() > 3500) {
+    $('.contact-fixed').css({'position':'fixed', 'top':'65px'});
+  } else {
+    $('.contact-fixed').css({'position':'absolute', 'top':'65px'});
+  }
+};
+
 $(document).ready(function(){
   // Cache the Window object
   $window = $(window);
@@ -36,6 +44,7 @@ $(document).ready(function(){
 });
   $window.scroll(setScrollAbout);
   $window.scroll(setScrollPortfolio);
+  $window.scroll(setScrollContact);
 });
 
 /*

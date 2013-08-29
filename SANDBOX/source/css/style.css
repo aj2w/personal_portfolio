@@ -6,8 +6,8 @@ body{
 /*First display window*/
 #home {
 	background: url(../images/abstract_newyork.jpg) 50% 0 no-repeat fixed;
-	height: 1000px;
-	margin: 0 auto;
+  height: 1000px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   position: relative;
@@ -28,12 +28,23 @@ body{
 /*Third display window*/
 #portfolio {
   background: url(../images/second.jpg) 50% 0 no-repeat fixed;
-  height: 3000px;
+  height: 1500px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   position: relative;
   /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+}
+
+/*Fourth display window*/
+#contact {
+  background: url(../images/first.jpg) 50% 0 no-repeat fixed;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 /* Name */
@@ -50,8 +61,39 @@ body{
   text-shadow: 2px 2px #000000;
 }
 
-/*About title (fixed on right hand side)*/
-.about-fixed {
+/*Navbar*/
+.navbar-link {
+  position: fixed;
+  text-align: center;
+  margin-top: 0;
+  height: 30px;
+  width: 100px;
+  /*background: white;*/
+  background-color:rgba(255,230,0,0.5);
+  color: #5c5050;
+  line-height: 2.3;
+  font-weight: 550;
+  /*border: 1px solid black;*/
+}
+
+.about-link {
+  margin-left: 45px;
+}
+
+.portfolio-link {
+  margin-left: 145px;
+}
+
+.contact-link {
+  margin-left: 245px;
+}
+
+.blog-link {
+  margin-left: 345px;
+}
+
+/*Fixed header title (rotated 90 degrees)*/
+.fixed-title{
   color:white;
   font-family: 'Fjord One', serif;
   font-size: 45px;
@@ -65,21 +107,21 @@ body{
   transform: rotate(90deg);
 }
 
-/*Portfolio title (fixed on right hand side)*/
+/*About title*/
+.about-fixed {
+  /*nothing in here yet*/
+}
+
+/*Portfolio title*/
 .portfolio-fixed {
-  color:white;
-  font-family: 'Fjord One', serif;
-  font-size: 45px;
-  position: absolute;
-  right: 0;
-  top: 65px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
   margin-top: 35px;
   margin-right: -25px;
+}
+
+/*Contact title*/
+.contact-fixed {
+  margin-top: 35px;
+  margin-right: -12px;
 }
 
 /*About section's text box*/
@@ -95,11 +137,13 @@ body{
   /*text-shadow: 2px 2px #000000;*/
 }
 
+/*About page greeting*/
 .greeting {
   font-size: 45px;
   font-family: 'Lato', sans-serif;
 }
 
+/*About page slogan*/
 .sub-greeting {
   font-size: 35px;
   font-family: 'Lato', sans-serif;
@@ -110,7 +154,7 @@ body{
   vertical-align: top;
   width: 275px;
 
-    font-size: 19px;
+  font-size: 19px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -122,11 +166,11 @@ body{
 
 .about-main-text {
  font-size: 30px;
-  font-family: 'Lato', sans-serif;
+ font-family: 'Lato', sans-serif;
 }
 
 /*Portfolio section*/
-.portfolio-main {
+.portfolio-preview {
   height: 600px;
   width: 900px;
   position: absolute;
@@ -147,6 +191,7 @@ body{
 .screenshots {
   width: 400px;
   padding: 20px;
+  /*display: inline-block;*/
 }
 
 /*hr {
@@ -154,8 +199,15 @@ body{
      background: #f00;
      width: 45%;
      height: 2px;
+     }*/
+
+/*.screenshot-title {
+bottom: -20px;
+font-weight: 700;
+left: 0;
+vertical-align: baseline;
+position: relative;
+width: 300px;
 }*/
-
-
 
 
