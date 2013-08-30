@@ -58,8 +58,6 @@ GEM
     newrelic_rpm (3.6.6.147)
     pg (0.16.0)
     polyglot (0.3.3)
-    puma (2.5.1)
-      rack (>= 1.1, < 2.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -118,7 +116,6 @@ DEPENDENCIES
   memcachier
   newrelic_rpm
   pg
-  puma
   rack-cache
   rails (= 3.2.13)
   route_downcaser

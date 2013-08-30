@@ -21,7 +21,7 @@ end
 
 # gem 'thin'
 # gem 'unicorn'
-gem 'puma'
+# gem 'puma'
 
 gem 'route_downcaser'
 
