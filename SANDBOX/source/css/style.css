@@ -17,7 +17,7 @@ body{
 /*Second display window*/
 #about {
 	background: url(../images/about.jpg) 50% 0 no-repeat fixed;
-	height: 1000px;
+	height: 900px;
 	margin: 0 auto;
   width: 100%;
   max-width: 1920px;
@@ -27,22 +27,22 @@ body{
 
 /*Third display window*/
 #portfolio {
-  background: url(../images/second.jpg) 50% 0 no-repeat fixed;
-  height: 1500px;
+  background: url(../images/brick.jpg) 50% 0 no-repeat fixed;
+  height: 1400px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   position: relative;
-  /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 /*Fourth display window*/
 #contact {
-  background: url(../images/first.jpg) 50% 0 no-repeat fixed;
-  height: 1000px;
+  background: url(../images/third_temp.jpg) 50% 0 no-repeat fixed;
+  height: 300px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -71,28 +71,40 @@ body{
   color: #5c5050;
   line-height: 2.3;
   font-weight: 550;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar-link {
   position: fixed;
   width: 100px;
-  background-color:rgba(255,230,0,0.7);
+  /*background-color:rgba(255,230,0,0.7);*/
+  background: white;
+}
+
+.home-link {
+  margin-left: 45px;
+  width: 60px;
+  visibility: hidden;
 }
 
 .about-link {
-  margin-left: 35px;
+  margin-left: 105px;
+  width: 65px;
 }
 
 .portfolio-link {
-  margin-left: 135px;
+  margin-left: 170px;
+  width: 90px;
 }
 
 .contact-link {
-  margin-left: 235px;
+  margin-left: 260px;
+  width: 85px;
 }
 
 .blog-link {
-  margin-left: 335px;
+  margin-left: 345px;
+  width: 60px;
 }
 
 
@@ -131,19 +143,19 @@ body{
 /*About section's text box*/
 .about-main {
   height: 600px;
-  width: 900px;
+  width: 1050px;
   position: absolute;
-  left: 250px;
+  left: 140px;
   top: 90px;
   background-color:rgba(237,24,24,0.5);
   padding: 45px;
   color: white;
-  /*text-shadow: 2px 2px #000000;*/
+  /*text-shadow: 1px 1px #5c5050;*/
 }
 
 /*About page greeting*/
 .greeting {
-  font-size: 45px;
+  font-size: 55px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -156,10 +168,15 @@ body{
 .about-detail {
   display: inline-block;
   vertical-align: top;
-  width: 275px;
-
+  width: 325px;
+  margin: 40px;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
+}
+
+.skills {
+  width: 100px;
+  /*margin-left: 40px;*/
 }
 
 .about-detail-header {
@@ -169,49 +186,97 @@ body{
 }
 
 .about-main-text {
- font-size: 30px;
+ font-size: 25px;
  font-family: 'Lato', sans-serif;
 }
 
 /*Portfolio section*/
-.portfolio-preview {
-  height: 600px;
-  width: 900px;
-  position: absolute;
-  left: 250px;
+
+.portfolio-main {
+  height: 1175px;
+  width: 1050px;
+  position: relative;
+  left: 140px;
   top: 90px;
-  text-align: center;
-  /*background: pink;*/
+  background-color:rgba(94,94,94,0.4);
+  /*font-size: 30px;*/
+  padding: 45px;
+  color: white;
+  /*text-shadow: 1px 1px #5c5050;*/
 }
 
-.latest-work {
-  font-size: 25px;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
+.rubyonrage-image-container {
+  /*background: pink;*/
+  width: 500px;
+  position: absolute;
+  right: 110px;
+  top: 50px;
+}
+
+.rubyonrage-second-image-container {
+  /*background: pink;*/
+  width: 500px;
+  position: absolute;
+  right: 110px;
+  top: 390px;
+}
+.rubyonrage-text {
+  width: 430px;
+}
+
+.project-links {
+  text-decoration: none;
   color: white;
-  font-weight: 700;
+ font-size: 20px;
+ line-height: 2;
+ font-family: 'Lato', sans-serif;
+
+}
+
+.portfolio-main-text {
+ font-size: 17px;
+ line-height: 1.5;
+ font-family: 'Lato', sans-serif;
+ text-shadow: 1px 1px #5c5050;
+}
+
+.partnership {
+  font-size: 15px;
 }
 
 .screenshots {
-  width: 400px;
-  padding: 20px;
+  width: 600px;
+  margin-right: 20px;
+  /*border: 1px solid white;*/
   /*display: inline-block;*/
 }
 
-/*hr {
-     color: #f00;
-     background: #f00;
-     width: 45%;
-     height: 2px;
-     }*/
+.portfolio-division {
+  width: 1000px;
+  height: 4px;
+}
 
-/*.screenshot-title {
-bottom: -20px;
-font-weight: 700;
-left: 0;
-vertical-align: baseline;
-position: relative;
-width: 300px;
-}*/
+.streetside-image-container {
+  /*background: pink;*/
+  width: 500px;
+  position: absolute;
+  right: 110px;
+  top: 760px;
+}
 
+/*Contact section*/
+.contact-main {
+  height: 75px;
+  width: 1000px;
+  position: absolute;
+  left: 140px;
+  top: 90px;
+  background-color:rgba(237,24,24,0.5);
+  padding: 45px;
+  color: white;
+  /*text-shadow: 1px 1px #5c5050;*/
+}
 
+.icons {
+  margin-left: 600px;
+}

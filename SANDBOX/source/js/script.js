@@ -2,6 +2,14 @@
 //     console.log($(document).scrollTop());
 // })
 
+// The below shows/hides the home button depending on window position
+var setAlternateNavbar = function() {
+  if($(document).scrollTop() > 999) {
+    $('.home-link').css({'visibility':'visible'});
+  } else {
+    $('.home-link').css({'visibility':'hidden'});
+  }
+};
 // The below sets the title in the upper right
 var setScrollAbout = function() {
   if($(document).scrollTop() > 1000) {
@@ -12,7 +20,7 @@ var setScrollAbout = function() {
 };
 
 var setScrollPortfolio = function() {
-  if($(document).scrollTop() > 2000) {
+  if($(document).scrollTop() > 1900) {
     $('.portfolio-fixed').css({'position':'fixed', 'top':'65px'});
   } else {
     $('.portfolio-fixed').css({'position':'absolute', 'top':'65px'});
@@ -20,18 +28,10 @@ var setScrollPortfolio = function() {
 };
 
 var setScrollContact = function() {
-  if($(document).scrollTop() > 3500) {
+  if($(document).scrollTop() > 3400) {
     $('.contact-fixed').css({'position':'fixed', 'top':'65px'});
   } else {
     $('.contact-fixed').css({'position':'absolute', 'top':'65px'});
-  }
-};
-
-var setAlternateNavbar = function() {
-  if($(document).scrollTop() > 1000) {
-    $('.navbar').css({'position':'absolute', 'top':'0'});
-  } else {
-    // some sort of else statement
   }
 };
 
@@ -60,6 +60,12 @@ $(document).ready(function(){
   $(".about-link").click(function(){
     $('html, body').animate({
       scrollTop: $("#about").offset().top
+    }, 1000);
+  });
+
+  $(".home-link").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#home").offset().top
     }, 1000);
   });
 

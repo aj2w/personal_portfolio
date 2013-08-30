@@ -21,6 +21,7 @@
   <section id="home" data-speed="3" data-type="background">
     <div class="main-title">Anuj Jhunjhunwala</div>
     <div class="navbar">
+      <div class="navbar-link home-link">HOME</div>
       <div class="navbar-link about-link">ABOUT</div>
       <div class="navbar-link portfolio-link">PORTFOLIO</div>
       <div class="navbar-link contact-link">CONTACT</div>
@@ -32,31 +33,35 @@
   <section id="about" data-speed="4" data-type="background">
     <div class="fixed-title about-fixed">About</div>
 
-<!--     <div class="alt-navbar">
-      <div class="alt-navbar-link alt-about-link">ABOUT</div>
-      <div class="alt-navbar-link alt-portfolio-link">PORTFOLIO</div>
-      <div class="alt-navbar-link alt-contact-link">CONTACT</div>
-      <div class="alt-navbar-link alt-blog-link">BLOG</div>
-    </div> -->
-
     <div class="about-main">
       <span class="greeting">Hello.</span></br></br>
-      <span class="sub-greeting">My name is Anuj, and I am passionate about technology.</span><br><br>
-      <span class="about-main-text">I am a New York City-based web developer. I recently graduated from General Assembly's Web Development Immersive program, where I learned and applied the fundamentals of Ruby, Rails, JavaScript, SQL, and other technologies.</span> <br><br></br>
+      <span class="sub-greeting">My name is Anuj. I am a New York-based web developer.</span><br><br>
+      <span class="about-main-text">I recently graduated from General Assembly's Web Development Immersive program, where I learned the basics of how to use Ruby, Rails, JavaScript, and other technologies to make beautiful web-based applications.</span><br><br>
+      <span class="about-main-text">Have a look around, and please do contact me if you would like to work together.</span> <br><br></br>
 
       <div class="about-detail">
-        <span class="about-detail-header">Background</span><br></br>
-        Before I got into web development, I worked in finance, first in investment banking and then as an investment analyst at a New York-based hedge fund. I graduated from Columbia with a degree in Economics-Political Science in 2011.
+        <span class="about-detail-header">Background</span><br>
+        <hr>
+        Before I got into web development, I worked in finance, first in investment banking and then as an analyst at a New York-based hedge fund.<br><br>I graduated from Columbia University with a degree in Economics-Political Science in 2011.
       </div>
 
       <div class="about-detail">
-        <span class="about-detail-header">Passions</span><br></br>
+        <span class="about-detail-header">Passions</span><br>
+        <hr>
         I drink coffee for the taste, not just for the caffeine kick. I enjoy traveling almost as much as I enjoy geeking out about the airplane I'm traveling on. I read Wikipedia for fun. I believe in the New Orleans Saints.
       </div>
 
-      <div class="about-detail">
-        <span class="about-detail-header">Skills</span><br></br>
-        Ruby/Rails/JavaScript/SQL/HTML/CSS
+      <div class="about-detail skills">
+        <span class="about-detail-header">Skills</span><br><hr>
+        <ul>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -65,39 +70,61 @@
   <section id="portfolio" data-speed="10" data-type="background">
     <div class="fixed-title portfolio-fixed">Portfolio</div>
 
-    <div class="portfolio-preview">
-      <span class="latest-work">LATEST WORK</span></br></br>
-
-      <!-- <div> -->
-      <img src="images/streetside.png" class="screenshots"/>
-      <!-- <span class="screenshot-title">Streetside_Bites</span> -->
-      <!-- </div> -->
-
-      <!-- <div> -->
-      <img src="images/rubyonrage.png" class="screenshots"/>
-      <!-- <span class="screenshot-title">Ruby on Rage</span> -->
-      <!-- </div> -->
-
-      <div class="hr"><hr /></div>
-      <!-- <div class="hr"><hr /></div> -->
-      <!-- </div> -->
-
-      <div class="portfolio-detail">
-        <div class="streetside">Streetside bites
+    <div class="portfolio-main">
+      <span class="greeting">Ruby on Rage</span><br>
+      <a class="project-links" href="http://rubyonrage.herokuapp.com">http://rubyonrage.herokuapp.com</a>
+      <div class="rubyonrage-image-container">
+        <img src="images/rubyonrage.png" class="screenshots"/>
+      </div>
+      <div class="rubyonrage-second-image-container">
+        <img src="images/rubysingle.jpg" class="screenshots"/>
+      </div>
+      <div class="rubyonrage-text">
+        <span class="portfolio-main-text"><br>A multiplayer Tetris-like game in which users can play in real-time with other online players. <br><br>The game utilizes Pusher, an API that allows for the creation of WebSockets in which game data can be streamed to any another player logged in at the time, regardless of location.<br><br>The game also features a single-player mode.</span><br><br><br>
+        <span class="portfolio-main-text">Technologies Used:
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>AJAX</li>
+            <li>jQuery</li>
+            <li>Pusher API</li>
+            <li>BCrypt</li>
+          </ul></span>
+          <br>
+          <br>
+          <span class="partnership">Produced in partnership with Thomas Y. Yu</span>
+        </span>
+      </div><br><br><br>
+      <hr class="portfolio-division">
+      <span class="greeting">Streetside_Bites</span></br>
+      <a class="project-links" href="http://streetside_bites.herokuapp.com">http://streetside_bites.herokuapp.com</a>
+      <div class="streetside-image-container">
+        <img src="images/streetside.png" class="screenshots"/>
+      </div>
+      <div class="rubyonrage-text">
+        <span class="portfolio-main-text"><br>A street vendor reviewing website that allows users to upload and find vendors in their area.<br><br>The app has an integrated Google Map gem that allows vendors stored in the database to appear based on a location entered. The app also allows users to browse by food.</span><br><br><br>
+        <span class="portfolio-main-text">Technologies Used:
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>PostgreSQL</li>
+            <li>Google Maps</li>
+            <li>BCrypt</li>
+          </ul></span>
         </div>
       </div>
 
     </section>
 
     <!-- section #4 -->
-    <section id="contact" data-speed="4" data-type="background">
+    <section id="contact" data-speed="10" data-type="background">
       <div class="fixed-title contact-fixed">Contact</div>
 
-      <div class="about-main">
-        <span class="greeting">Let's talk.</span><br>
-        <img src="http://klugeinteractive.com/site/wp-content/themes/twentytwelve/images/Mail_Simple_White.svg" width=50px/>
-        <i class="icon-camera-retro"></i> icon-camera-retro
-        <img src="http://klugeinteractive.com/site/wp-content/themes/twentytwelve/images/Twitter_Simple_White.svg" width=50px/>
+      <div class="contact-main">
+        <span class="greeting">Let's talk.</span>
+        <span class="icons">
+          <img src="images/icons/new.svg" padding=10px width=50px/>
+          <img src="images/icons/twitter.svg" width=50px/>
+        </span>
       </div>
     </section>
 
