@@ -33,7 +33,7 @@ body{
   width: 100%;
   max-width: 1920px;
   position: relative;
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.6);
 }
 
 /*Fourth display window*/
@@ -203,6 +203,10 @@ body{
   padding: 45px;
   color: white;
   /*text-shadow: 1px 1px #5c5050;*/
+}
+
+.shadow {
+ text-shadow: 1px 1px #5c5050;
 }
 
 .rubyonrage-image-container {
