@@ -37,6 +37,17 @@ var setScrollContact = function() {
 
 // Sets the window to be ready, calls the functions
 $(document).ready(function(){
+  // GOOGLE ANALYTICS
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43648984-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+// END GOOGLE ANALYTICS
   // Cache the Window object
   $window = $(window);
   $('section[data-type="background"]').each(function(){
@@ -60,7 +71,7 @@ $(document).ready(function(){
   $(".about-link").click(function(){
     $('html, body').animate({
       scrollTop: $("#about").offset().top
-    }, 1000);
+    }, 2000);
   });
 
   $(".home-link").click(function(){
@@ -82,17 +93,7 @@ $(document).ready(function(){
   });
 });
 
-// GOOGLE ANALYTICS
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-43648984-1']);
-_gaq.push(['_trackPageview']);
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-// END GOOGLE ANALYTICS
 
 /*
  * Create HTML5 elements for IE's sake
