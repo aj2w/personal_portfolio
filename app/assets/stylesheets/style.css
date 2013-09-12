@@ -27,7 +27,7 @@ body{
 /*Third display window*/
 #portfolio {
   background: url(portfolio_updated.jpg) 50% 0 no-repeat fixed;
-  min-height: 1400px;
+  min-height: 2150px;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -191,7 +191,7 @@ body{
 /*Portfolio section*/
 
 .portfolio-main {
-  height: 1175px;
+  height: 1900px;
   width: 75%;
   position: relative;
   left: 8%;
@@ -206,11 +206,26 @@ body{
  text-shadow: 1px 1px #5c5050;
 }
 
+.track-image-container {
+  width: 500px;
+  position: absolute;
+  right: 110px;
+  top: 80px;
+}
+
+.track-second-image-container {
+  /*background: pink;*/
+  width: 500px;
+  position: absolute;
+  right: 110px;
+  top: 380px;
+}
+
 .rubyonrage-image-container {
   width: 500px;
   position: absolute;
   right: 110px;
-  top: 50px;
+  top: 900px;
 }
 
 .rubyonrage-second-image-container {
@@ -218,7 +233,7 @@ body{
   width: 500px;
   position: absolute;
   right: 110px;
-  top: 390px;
+  top: 1200px;
 }
 .rubyonrage-text {
   width: 45%;
@@ -261,7 +276,7 @@ body{
   width: 500px;
   position: absolute;
   right: 110px;
-  top: 760px;
+  top: 1575px;
 }
 
 /*Contact section*/
