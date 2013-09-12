@@ -27,27 +27,9 @@ var setScrollPortfolio = function() {
   }
 };
 
-var setScrollContact = function() {
-  if($(document).scrollTop() > 3400) {
-    $('.contact-fixed').css({'position':'fixed', 'top':'65px'});
-  } else {
-    $('.contact-fixed').css({'position':'absolute', 'top':'65px'});
-  }
-};
-
 // Sets the window to be ready, calls the functions
 $(document).ready(function(){
-  // GOOGLE ANALYTICS
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-43648984-1']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-// END GOOGLE ANALYTICS
   // Cache the Window object
   $window = $(window);
   $('section[data-type="background"]').each(function(){

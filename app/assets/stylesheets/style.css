@@ -293,5 +293,17 @@ body{
 }
 
 .icons {
-  margin-left: 50%%;
+  margin-left: 45%;
 }
+
+.contact_icons {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.email {
+  position: absolute;
+  top: 45px;
+}
+
