@@ -209,7 +209,7 @@ body{
 .track-image-container {
   width: 500px;
   position: absolute;
-  right: 110px;
+  right: 30px;
   top: 80px;
 }
 
@@ -217,14 +217,14 @@ body{
   /*background: pink;*/
   width: 500px;
   position: absolute;
-  right: 110px;
+  right: 30px;
   top: 380px;
 }
 
 .rubyonrage-image-container {
   width: 500px;
   position: absolute;
-  right: 110px;
+  right: 30px;
   top: 900px;
 }
 
@@ -232,11 +232,12 @@ body{
   /*background: pink;*/
   width: 500px;
   position: absolute;
-  right: 110px;
+  right: 30px;
   top: 1200px;
 }
 .rubyonrage-text {
   width: 45%;
+  min-width: 350px;
 }
 
 .project-links {
@@ -275,7 +276,7 @@ body{
   /*background: pink;*/
   width: 500px;
   position: absolute;
-  right: 110px;
+  right: 30px;
   top: 1575px;
 }
 

@@ -27,6 +27,26 @@ var setScrollPortfolio = function() {
   }
 };
 
+$(window).on('resize', function(event){
+  var windowSize = $(window).width(); // Could've done $(this).width()
+  if ($window.width() < 1028) {
+    $('.main-title').css({'margin-left':'0','font-size':'50px'});
+    $('.screenshots').hide();
+  } else {
+    $('.main-title').css({'margin-left':'43%','font-size':'80px'});
+    $('.screenshots').show();
+  };
+  if ($window.width() < 1200) {
+    $('.screenshots').css({'width':'80%'});
+  } else {
+    $('.screenshots').css({'width':'100%'});
+  }
+});
+
+// var widthSetting = function() {
+
+// };
+
 // Sets the window to be ready, calls the functions
 $(document).ready(function(){
 
@@ -49,6 +69,7 @@ $(document).ready(function(){
   $window.scroll(setScrollPortfolio);
   $window.scroll(setScrollContact);
   $window.scroll(setAlternateNavbar);
+  // $window.;
 
   $(".about-link").click(function(){
     $('html, body').animate({
