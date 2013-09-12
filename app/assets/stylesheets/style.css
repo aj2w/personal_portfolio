@@ -1,6 +1,7 @@
 body{
   margin:0;
   padding:0;
+  /*width: auto;*/
 }
 
 /*First display window*/
@@ -9,7 +10,6 @@ body{
   height: 1000px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -17,10 +17,9 @@ body{
 /*Second display window*/
 #about {
   background: url(about_updated.jpg) 50% 0 no-repeat fixed;
-  height: 900px;
+  min-height: 900px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -28,10 +27,9 @@ body{
 /*Third display window*/
 #portfolio {
   background: url(portfolio_updated.jpg) 50% 0 no-repeat fixed;
-  height: 1400px;
+  min-height: 1400px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.6);
 }
@@ -42,7 +40,6 @@ body{
   height: 300px;
   margin: 0 auto;
   width: 100%;
-  /*max-width: 1920px;*/
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -50,11 +47,12 @@ body{
 /* Name */
 .main-title {
   height: 100px;
-  width: 700px;
+  width: 100%;
+  /*width: 700px;*/
   float: left;
-  margin-left: 600px;
-  margin-top: 400px;
-  text-align: center;
+  margin-left: 43%;
+  margin-top: 27%;
+  text-align: left;
   font-family: 'Fjord One', serif;
   font-size: 80px;
   color: white;
@@ -70,8 +68,8 @@ body{
   height: 30px;
   color: #5c5050;
   line-height: 2.3;
-  font-weight: 550;
-    font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar-link {
@@ -142,10 +140,10 @@ body{
 
 /*About section's text box*/
 .about-main {
-  height: 600px;
-  width: 1050px;
+  height: auto;
+  width: 75%;
   position: absolute;
-  left: 140px;
+  left: 8%;
   top: 90px;
   background-color:rgba(237,24,24,0.5);
   padding: 45px;
@@ -169,7 +167,7 @@ body{
   display: inline-block;
   vertical-align: top;
   width: 325px;
-  margin: 40px;
+  margin: 3.5%;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
 }
@@ -194,12 +192,11 @@ body{
 
 .portfolio-main {
   height: 1175px;
-  width: 1050px;
+  width: 75%;
   position: relative;
-  left: 140px;
+  left: 8%;
   top: 90px;
-  background-color:rgba(94,94,94,0.5);
-  /*font-size: 30px;*/
+  background-color:rgba(94,94,94,0.3);
   padding: 45px;
   color: white;
   /*text-shadow: 1px 1px #5c5050;*/
@@ -210,7 +207,6 @@ body{
 }
 
 .rubyonrage-image-container {
-  /*background: pink;*/
   width: 500px;
   position: absolute;
   right: 110px;
@@ -225,7 +221,7 @@ body{
   top: 390px;
 }
 .rubyonrage-text {
-  width: 430px;
+  width: 45%;
 }
 
 .project-links {
@@ -249,14 +245,14 @@ body{
 }
 
 .screenshots {
-  width: 600px;
-  margin-right: 20px;
+  width: 500px;
+  margin-right: 1%;
   /*border: 1px solid white;*/
   /*display: inline-block;*/
 }
 
 .portfolio-division {
-  width: 1000px;
+  width: auto;
   height: 4px;
 }
 
@@ -271,9 +267,9 @@ body{
 /*Contact section*/
 .contact-main {
   height: 75px;
-  width: 1000px;
+  width: 75%;
   position: absolute;
-  left: 140px;
+  left: 8%;
   top: 90px;
   background-color:rgba(237,24,24,0.5);
   padding: 45px;
@@ -282,5 +278,5 @@ body{
 }
 
 .icons {
-  margin-left: 600px;
+  margin-left: 50%%;
 }
