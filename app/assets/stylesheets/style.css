@@ -4,6 +4,11 @@ body{
   /*width: auto;*/
 }
 
+a, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 /*First display window*/
 #home {
   background: url(abstract_newyork_updated.jpg) 50% 0 no-repeat fixed;
