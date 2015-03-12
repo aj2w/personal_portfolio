@@ -77,10 +77,10 @@ $(document).ready(function(){
 $(window).on('resize', function(event){
   var windowSize = $(window).width(); // Could've done $(this).width()
   if ($window.width() < 1028) {
-    $('.main-title').css({'margin-left':'0','font-size':'50px'});
+    // $('.main-title').css({'margin-left':'0','font-size':'50px'});
     $('.screenshots').hide();
   } else {
-    $('.main-title').css({'margin-left':'43%','font-size':'80px'});
+    // $('.main-title').css({'margin-left':'43%','font-size':'80px'});
     $('.screenshots').show();
   }
   if ($window.width() < 1200) {

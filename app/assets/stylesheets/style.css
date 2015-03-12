@@ -51,12 +51,10 @@ a, a:active, a:visited {
 
 /* Name */
 .main-title {
-  height: 100px;
-  width: 100%;
-  /*width: 700px;*/
-  float: left;
-  margin-left: 43%;
-  margin-top: 27%;
+  width: 700px;
+  float: right;
+  padding-right: 50px;
+  margin-top: 350px;
   text-align: left;
   font-family: 'Fjord One', serif;
   font-size: 80px;
@@ -146,14 +144,14 @@ a, a:active, a:visited {
 /*About section's text box*/
 .about-main {
   height: auto;
-  width: 75%;
+  min-width: 900px;
+  max-width: 80%;
   position: absolute;
-  left: 8%;
+  left: 50px;
   top: 90px;
   background-color:rgba(237,24,24,0.5);
   padding: 45px;
   color: white;
-  /*text-shadow: 1px 1px #5c5050;*/
 }
 
 /*About page greeting*/
@@ -171,14 +169,15 @@ a, a:active, a:visited {
 .about-detail {
   display: inline-block;
   vertical-align: top;
-  width: 325px;
+  width: 275px;
   margin: 3.5%;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
 }
 
 .skills {
-  width: 100px;
+  min-width: 150px;
+  width: 300px;
   /*margin-left: 40px;*/
 }
 
