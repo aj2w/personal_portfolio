@@ -76,16 +76,24 @@ $(document).ready(function(){
   });
 $(window).on('resize', function(event){
   var windowSize = $(window).width(); // Could've done $(this).width()
+  $('#about').height($('.about-main').height() + 250);
+  $('#portfolio').height($('.portfolio-main').height() + 250);
   if ($window.width() < 1028) {
-    // $('.main-title').css({'margin-left':'0','font-size':'50px'});
-    $('.screenshots').hide();
+    $('.main-title').css({'float':'left','font-size':'50px'});
+    // $('.screenshots').hide();
   } else {
-    // $('.main-title').css({'margin-left':'43%','font-size':'80px'});
-    $('.screenshots').show();
+    $('.main-title').css({'float':'right','font-size':'80px'});
+    // $('.screenshots').show();
   }
   if ($window.width() < 1200) {
+    $('.about-fixed').hide();
+    $('.portfolio-fixed').hide();
+    $('.contact-fixed').hide();
     $('.screenshots').css({'width':'80%'});
   } else {
+    $('.about-fixed').show();
+    $('.portfolio-fixed').show();
+    $('.contact-fixed').show();
     $('.screenshots').css({'width':'100%'});
   }
 });

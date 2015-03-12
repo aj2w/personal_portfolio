@@ -110,7 +110,7 @@ a, a:active, a:visited {
 
 
 /*Fixed header title (rotated 90 degrees)*/
-.fixed-title{
+.fixed-title {
   color:white;
   font-family: 'Fjord One', serif;
   font-size: 45px;
@@ -144,7 +144,7 @@ a, a:active, a:visited {
 /*About section's text box*/
 .about-main {
   height: auto;
-  min-width: 900px;
+  min-width: 901px;
   max-width: 80%;
   position: absolute;
   left: 50px;
@@ -166,19 +166,21 @@ a, a:active, a:visited {
   font-family: 'Lato', sans-serif;
 }
 
+.row-container {
+  width: 910px;
+}
+
 .about-detail {
   display: inline-block;
   vertical-align: top;
-  width: 275px;
-  margin: 3.5%;
+  width: 270px;
+  padding: 15px;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
 }
 
 .skills {
   min-width: 150px;
-  width: 300px;
-  /*margin-left: 40px;*/
 }
 
 .about-detail-header {
@@ -195,10 +197,11 @@ a, a:active, a:visited {
 /*Portfolio section*/
 
 .portfolio-main {
-  height: 1900px;
-  width: 75%;
+  height: auto;
+  min-width: 901px;
+  max-width: 80%;
   position: relative;
-  left: 8%;
+  left: 50px;
   top: 90px;
   background-color:rgba(94,94,94,0.3);
   padding: 45px;
@@ -260,15 +263,9 @@ a, a:active, a:visited {
  text-shadow: 1px 1px #5c5050;
 }
 
-.partnership {
-  font-size: 15px;
-}
-
 .screenshots {
   width: 500px;
   margin-right: 1%;
-  /*border: 1px solid white;*/
-  /*display: inline-block;*/
 }
 
 .portfolio-division {
@@ -277,7 +274,6 @@ a, a:active, a:visited {
 }
 
 .streetside-image-container {
-  /*background: pink;*/
   width: 500px;
   position: absolute;
   right: 30px;
@@ -287,18 +283,18 @@ a, a:active, a:visited {
 /*Contact section*/
 .contact-main {
   height: 75px;
-  width: 75%;
+  width: 80%;
+  min-width: 901px;
   position: absolute;
-  left: 8%;
+  left: 50px;
   top: 90px;
   background-color:rgba(237,24,24,0.5);
   padding: 45px;
   color: white;
-  /*text-shadow: 1px 1px #5c5050;*/
 }
 
 .icons {
-  margin-left: 45%;
+  float: right;
 }
 
 .contact_icons {
@@ -308,7 +304,6 @@ a, a:active, a:visited {
 }
 
 .email {
-  position: absolute;
-  top: 45px;
+  top: 65px;
 }
 
